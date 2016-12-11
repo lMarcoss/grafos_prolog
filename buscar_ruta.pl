@@ -1699,49 +1699,45 @@ vertices_edges_to_ugraph(
 ,G).
 
 
-/*Si la dirección que se encuentra el destino es igual a la del destino, 
-toma el vecino como nuevo origen*/
-tomar_vecino_origen([],Nuevo_origen,Destino,_):-
+/*Toma el vecino con coordenaas más cerca al destino*/
+vecino_cerca_destino([],Nuevo_origen,Destino,_):-
 	municipio(Nuevo_origen,Nombre_origen),
 	write(Nombre_origen),
 	write('\n'),
-	buscar_destino(Nuevo_origen,Destino).
+	destino_es_origen(Nuevo_origen,Destino).
 
-tomar_vecino_origen([Candidato|Rest],_,Destino,Distancia_menor):-
+vecino_cerca_destino([Candidato|Rest],_,Destino,Distancia_menor):-
 	distancia(Candidato,Destino,Distancia),
-	Distancia < Distancia_menor, %% distancia_vecino es chica que el vecino anterior este será candidato para nuevo origen
-	tomar_vecino_origen(Rest,Candidato,Destino,Distancia).
+	Distancia < Distancia_menor, /*Vecino más cerca es candidato para nuevo origen*/
+	vecino_cerca_destino(Rest,Candidato,Destino,Distancia).
 
-tomar_vecino_origen([_|Rest],Origen,Destino,Distancia_menor):-
-	tomar_vecino_origen(Rest,Origen,Destino,Distancia_menor).
-
+vecino_cerca_destino([_|Rest],Origen,Destino,Distancia_menor):-
+	vecino_cerca_destino(Rest,Origen,Destino,Distancia_menor).
 
 /*Obtiene los vecinos de un municipio*/
 buscar_vecinos(Municipio,G,Vecinos):-
   neighbors(Municipio,G,Vecinos).
-  %write('Vecinos: '),write(Vecinos_origen).
 
-
-
-buscar_nuevo_origen(Destino,Vecinos_origen):-
+/*El destino es el vecino*/
+vecino_es_destino(Destino,Vecinos_origen):-
 	member(Destino, Vecinos_origen),
 	municipio(Destino,Nombre_destino),
 	write(Nombre_destino).
-buscar_nuevo_origen(Destino,Vecinos):-
-	tomar_vecino_origen(Vecinos,_,Destino,99999).
+vecino_es_destino(Destino,Vecinos):-
+	vecino_cerca_destino(Vecinos,_,Destino,99999).
 
 /*Recursividad para recorrer vecinos*/
-buscar_destino(Origen,Destino):-
+destino_es_origen(Origen,Destino):-
   Origen == Destino,
   municipio(Origen,Nombre_origen),
   write(Nombre_origen).
 
-buscar_destino(Origen,Destino):-
+destino_es_origen(Origen,Destino):-
 	mpio_grafo(Origen,Grafo_municipio),
 	buscar_vecinos(Origen,Grafo_municipio,Vecinos_origen),
-  	buscar_nuevo_origen(Destino,Vecinos_origen).
+  	vecino_es_destino(Destino,Vecinos_origen).
 
-
+/*Calcula la distancia entre dos municipios*/
 distancia(Origen,Destino,Dist):- 
 	mpio_coords(Origen,Ox,Oy),
   	mpio_coords(Destino,Dx,Dy),
@@ -1753,7 +1749,9 @@ existe_municipios(Nombre_origen,Nombre_destino):-
 	municipio(Destino,Nombre_destino),
   	write(Nombre_origen),
   	write('\n'),
-  	buscar_destino(Origen,Destino).	
+  	%% Contador is 0,
+  	%% write(Contador),
+  	destino_es_origen(Origen,Destino).
 
 buscar_ruta():-
   write("Escriba el municipio de origen: "),
