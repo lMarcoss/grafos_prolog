@@ -6,7 +6,7 @@ municipio(4,actopan).
 municipio(5,acula).
 municipio(6,acultzingo).
 municipio(7,camaron_de_tejeda).
-municipio(7,alpatlahuac).
+municipio(8,alpatlahuac).
 municipio(9,alto_lucero_de_gutierrez_barrios).
 municipio(10,altotonga).
 municipio(11,alvarado).

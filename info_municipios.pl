@@ -426,6 +426,7 @@ municipio(210,uxpanapa).
 municipio(211,san_rafael).
 municipio(212,santiago_sochiapan).
 
+
 /* Grafos de vecinos*/
 mpio_grafo(1, G):-
 vertices_edges_to_ugraph(
@@ -1698,61 +1699,3 @@ vertices_edges_to_ugraph(
 [212,130],
 [212-130]
 ,G).
-
-
-/*Toma el vécino más cercano al destino*/
-vecino_cerca_destino([],Nuevo_origen,Destino,_):-
-	write(Nuevo_origen),
-	write('\n'),
-	destino_es_origen(Nuevo_origen,Destino).
-
-vecino_cerca_destino([Candidato|Rest],_,Destino,Distancia_menor):-
-	distancia(Candidato,Destino,Distancia),
-	Distancia < Distancia_menor, %% distancia_vecino es chica que el vecino anterior este será candidato para nuevo origen
-	vecino_cerca_destino(Rest,Candidato,Destino,Distancia).
-
-vecino_cerca_destino([_|Rest],Origen,Destino,Distancia_menor):-
-	vecino_cerca_destino(Rest,Origen,Destino,Distancia_menor).
-
-
-/*Obtiene los vecinos de un municipio*/
-buscar_vecinos(Municipio,G,Vecinos):-
-  neighbors(Municipio,G,Vecinos).
-
-/*El vecino es destino*/
-vecino_es_destino(Destino,Vecinos_origen):-
-	member(Destino, Vecinos_origen),
-	write(Destino).
-vecino_es_destino(Destino,Vecinos):-
-	vecino_cerca_destino(Vecinos,_,Destino,99999).
-
-/*El Origen es igual al destino*/
-destino_es_origen(Origen,Destino):-
-  Origen == Destino,
-  write(Origen).
-
-destino_es_origen(Origen,Destino):-
-	mpio_grafo(Origen,Grafo_municipio),
-	buscar_vecinos(Origen,Grafo_municipio,Vecinos_origen),
-  	vecino_es_destino(Destino,Vecinos_origen).
-
-/*Distancia del origen al destino*/
-distancia(Origen,Destino,Dist):- 
-	mpio_coords(Origen,Ox,Oy),
-  	mpio_coords(Destino,Dx,Dy),
-  	Dist is sqrt((Dx - Ox)*(Dx - Ox) + (Dy - Oy)*(Dy - Oy)).
-  	
-/*Verificar que los municipios existen*/
-existe_municipios(Origen,Destino):- 
-	mpio_coords(Origen,_,_),
-  	mpio_coords(Destino,_,_),
-  	write(Origen),
-  	write('\n'),
-  	destino_es_origen(Origen,Destino).
-/*Leer origen y destino*/
-buscar_ruta():-
-  write("Escriba el municipio de origen: "),
-  read(Origen),
-  write("Escriba el municipio de destino: "),
-  read(Destino),
-  existe_municipios(Origen,Destino).
