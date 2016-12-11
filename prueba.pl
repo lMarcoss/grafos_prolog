@@ -1,217 +1,3 @@
-/*Nombres de municipios*/
-municipio(1,acajete).
-municipio(2,acatlan).
-municipio(3,acayucan).
-municipio(4,actopan).
-municipio(5,acula).
-municipio(6,acultzingo).
-municipio(7,camaron_de_tejeda).
-municipio(7,alpatlahuac).
-municipio(9,alto_lucero_de_gutierrez_barrios).
-municipio(10,altotonga).
-municipio(11,alvarado).
-municipio(12,amatitlan).
-municipio(13,naranjos_amatlan).
-municipio(14,amatlan_de_los_reyes).
-municipio(15,angel_r_cabada).
-municipio(16,la_antigua).
-municipio(17,apazapan).
-municipio(18,aquila).
-municipio(19,astacinga).
-municipio(20,atlahuilco).
-municipio(21,atoyac).
-municipio(22,atzacan).
-municipio(23,atzalan).
-municipio(24,tlaltetela).
-municipio(25,ayahualulco).
-municipio(26,banderilla).
-municipio(27,benito_juarez).
-municipio(28,boca_del_rio).
-municipio(29,calcahualco).
-municipio(30,camerino_z_mendoza).
-municipio(31,carrillo_puerto).
-municipio(32,catemaco).
-municipio(33,cazones).
-municipio(34,cerro_azul).
-municipio(35,citlaltepetl).
-municipio(36,coacoatzintla).
-municipio(37,coahuitlan).
-municipio(38,coatepec).
-municipio(39,coatzacoalcos).
-municipio(40,coatzintla).
-municipio(41,coetzala).
-municipio(42,colipa).
-municipio(43,comapa).
-municipio(44,cordoba).
-municipio(45,cosamaloapan_de_carpio).
-municipio(46,cosautlan_de_carvajal).
-municipio(47,coscomatepec).
-municipio(48,cosoleacaque).
-municipio(49,cotaxtla).
-municipio(50,coxquihui).
-municipio(51,coyutla).
-municipio(52,cuichapa).
-municipio(53,cuitlahuac).
-municipio(54,chacaltianguis).
-municipio(55,chalma).
-municipio(56,chiconamel).
-municipio(57,chiconquiaco).
-municipio(58,chicontepec).
-municipio(59,chinameca).
-municipio(60,chinampa_de_gorostiza).
-municipio(61,las_choapas).
-municipio(62,chocaman).
-municipio(63,chontla).
-municipio(64,chumatlan).
-municipio(65,emiliano_zapata).
-municipio(66,espinal).
-municipio(67,filomeno_mata).
-municipio(68,fortin).
-municipio(69,gutierrez_zamora).
-municipio(70,hidalgotitlan).
-municipio(71,huatusco).
-municipio(72,huayacocotla).
-municipio(73,hueyapan_de_ocampo).
-municipio(74,huiloapan).
-municipio(75,ignacio_de_la_llave).
-municipio(76,ilamatlan).
-municipio(77,isla).
-municipio(78,ixcatepec).
-municipio(79,ixhuacan_de_los_reyes).
-municipio(80,ixhuatlan_del_cafe).
-municipio(81,ixhuatlancillo).
-municipio(82,ixhuatlan_del_sureste).
-municipio(83,ixhuatlan_de_madero).
-municipio(84,ixmatlahuacan).
-municipio(85,ixtaczoquitlan).
-municipio(86,jalacingo).
-municipio(87,xalapa).
-municipio(88,jalcomulco).
-municipio(89,jaltipan).
-municipio(90,jamapa).
-municipio(91,jesus_carranza).
-municipio(92,xico).
-municipio(93,jilotepec).
-municipio(94,juan_rodriguez_clara).
-municipio(95,juchique_de_ferrer).
-municipio(96,landero_y_coss).
-municipio(97,lerdo_de_tejada).
-municipio(98,magdalena).
-municipio(99,maltrata).
-municipio(100,manlio_fabio_altamirano).
-municipio(101,mariano_escobedo).
-municipio(102,martinez_de_la_torre).
-municipio(103,mecatlan).
-municipio(104,mecayapan).
-municipio(105,medellin).
-municipio(106,miahuatlan).
-municipio(107,las_minas).
-municipio(108,minatitlan).
-municipio(109,misantla).
-municipio(110,mixtla_de_altamirano).
-municipio(111,moloacan).
-municipio(112,naolinco).
-municipio(113,naranjal).
-municipio(114,nautla).
-municipio(115,nogales).
-municipio(116,oluta).
-municipio(117,omealca).
-municipio(118,orizaba).
-municipio(119,otatitlan).
-municipio(120,oteapan).
-municipio(121,ozuluama_de_mascarenas).
-municipio(122,pajapan).
-municipio(123,panuco).
-municipio(124,papantla).
-municipio(125,paso_del_macho).
-municipio(126,paso_de_ovejas).
-municipio(127,la_perla).
-municipio(128,perote).
-municipio(129,platon_sanchez).
-municipio(130,playa_vicente).
-municipio(131,poza_rica_de_hidalgo).
-municipio(132,las_vigas_de_ramirez).
-municipio(133,pueblo_viejo).
-municipio(134,puente_nacional).
-municipio(135,rafael_delgado).
-municipio(136,rafael_lucio).
-municipio(137,los_reyes).
-municipio(138,rio_blanco).
-municipio(139,saltabarranca).
-municipio(140,san_andres_tenejapan).
-municipio(141,san_andres_tuxtla).
-municipio(142,san_juan_evangelista).
-municipio(143,santiago_tuxtla).
-municipio(144,sayula_de_aleman).
-municipio(145,soconusco).
-municipio(146,sochiapa).
-municipio(147,soledad_atzompa).
-municipio(148,soledad_de_doblado).
-municipio(149,soteapan).
-municipio(150,tamalin).
-municipio(151,tamiahua).
-municipio(152,tampico_alto).
-municipio(153,tancoco).
-municipio(154,tantima).
-municipio(155,tantoyuca).
-municipio(156,tatatila).
-municipio(157,castillo_de_teayo).
-municipio(158,tecolutla).
-municipio(159,tehuipango).
-municipio(160,temapache).
-municipio(161,tempoal).
-municipio(162,tenampa).
-municipio(163,tenochtitlan).
-municipio(164,teocelo).
-municipio(165,tepatlaxco).
-municipio(166,tepetlan).
-municipio(167,tepetzintla).
-municipio(168,tequila).
-municipio(169,jose_azueta).
-municipio(170,texcatepec).
-municipio(171,texhuacan).
-municipio(172,texistepec).
-municipio(173,tezonapa).
-municipio(174,tierra_blanca).
-municipio(175,tihuatlan).
-municipio(176,tlacojalpan).
-municipio(177,tlacolulan).
-municipio(178,tlacotalpan).
-municipio(179,tlacotepec_de_mejia).
-municipio(180,tlachichilco).
-municipio(181,tlalixcoyan).
-municipio(182,tlalnelhuayocan).
-municipio(183,tlapacoyan).
-municipio(184,tlaquilpa).
-municipio(185,tlilapan).
-municipio(186,tomatlan).
-municipio(187,tonayan).
-municipio(188,totutla).
-municipio(189,tuxpam).
-municipio(190,tuxtilla).
-municipio(191,ursulo_galvan).
-municipio(192,vega_de_alatorre).
-municipio(193,veracruz).
-municipio(194,villa_aldama).
-municipio(195,xoxocotla).
-municipio(196,yanga).
-municipio(197,yecuatla).
-municipio(198,zacualpan).
-municipio(199,zaragoza).
-municipio(200,zentla).
-municipio(201,zongolica).
-municipio(202,zontecomatlan_de_lopez_y_fuentes).
-municipio(203,zozocolco_de_hidalgo).
-municipio(204,agua_dulce).
-municipio(205,el_higo).
-municipio(206,nanchital_de_lazaro_cardenas_del_rio).
-municipio(207,tres_valles).
-municipio(208,carlos_a_carrillo).
-municipio(209,tatahuicapan_de_juarez).
-municipio(210,uxpanapa).
-municipio(211,san_rafael).
-municipio(212,santiago_sochiapan).
-/*Coordenadas de cada municipio*/
 mpio_coords(1,97.010556,19.587500).
 mpio_coords(2,96.841389,19.695556).
 mpio_coords(3,94.913056,17.950833).
@@ -425,7 +211,9 @@ mpio_coords(210,94.451944,17.277222).
 mpio_coords(211,96.870833,20.188056).
 mpio_coords(212,95.735278,17.663333).
 
-/*Grafo de vecinos de cada municipio*/
+
+
+
 mpio_grafo(1, G):-
 vertices_edges_to_ugraph(
 [1,128,132,177,136,182,38],
@@ -1184,8 +972,8 @@ vertices_edges_to_ugraph(
 
 mpio_grafo(127, G):-
 vertices_edges_to_ugraph(
-[127,29,8,47,22,101],
-[127-29,127-8,127-47,127-22,127-101]
+[127,29,47,22,101],
+[127-29,127-47,127-22,127-101]
 ,G).
 
 mpio_grafo(128, G):-
@@ -1701,19 +1489,18 @@ vertices_edges_to_ugraph(
 
 /*Si la dirección que se encuentra el destino es igual a la del destino, 
 toma el vecino como nuevo origen*/
-tomar_vecino_origen([],Nuevo_origen,Destino,_):-
-	municipio(Nuevo_origen,Nombre_origen),
-	write(Nombre_origen),
+vecino_cerca_destino([],Nuevo_origen,Destino,_):-
+	write(Nuevo_origen),
 	write('\n'),
-	buscar_destino(Nuevo_origen,Destino).
+	destino_es_origen(Nuevo_origen,Destino).
 
-tomar_vecino_origen([Candidato|Rest],_,Destino,Distancia_menor):-
+vecino_cerca_destino([Candidato|Rest],_,Destino,Distancia_menor):-
 	distancia(Candidato,Destino,Distancia),
 	Distancia < Distancia_menor, %% distancia_vecino es chica que el vecino anterior este será candidato para nuevo origen
-	tomar_vecino_origen(Rest,Candidato,Destino,Distancia).
+	vecino_cerca_destino(Rest,Candidato,Destino,Distancia).
 
-tomar_vecino_origen([_|Rest],Origen,Destino,Distancia_menor):-
-	tomar_vecino_origen(Rest,Origen,Destino,Distancia_menor).
+vecino_cerca_destino([_|Rest],Origen,Destino,Distancia_menor):-
+	vecino_cerca_destino(Rest,Origen,Destino,Distancia_menor).
 
 
 /*Obtiene los vecinos de un municipio*/
@@ -1723,23 +1510,21 @@ buscar_vecinos(Municipio,G,Vecinos):-
 
 
 
-buscar_nuevo_origen(Destino,Vecinos_origen):-
+vecino_es_destino(Destino,Vecinos_origen):-
 	member(Destino, Vecinos_origen),
-	municipio(Destino,Nombre_destino),
-	write(Nombre_destino).
-buscar_nuevo_origen(Destino,Vecinos):-
-	tomar_vecino_origen(Vecinos,_,Destino,99999).
+	write(Destino).
+vecino_es_destino(Destino,Vecinos):-
+	vecino_cerca_destino(Vecinos,_,Destino,99999).
 
 /*Recursividad para recorrer vecinos*/
-buscar_destino(Origen,Destino):-
+destino_es_origen(Origen,Destino):-
   Origen == Destino,
-  municipio(Origen,Nombre_origen),
-  write(Nombre_origen).
+  write(Origen).
 
-buscar_destino(Origen,Destino):-
+destino_es_origen(Origen,Destino):-
 	mpio_grafo(Origen,Grafo_municipio),
 	buscar_vecinos(Origen,Grafo_municipio,Vecinos_origen),
-  	buscar_nuevo_origen(Destino,Vecinos_origen).
+  	vecino_es_destino(Destino,Vecinos_origen).
 
 
 distancia(Origen,Destino,Dist):- 
@@ -1748,12 +1533,12 @@ distancia(Origen,Destino,Dist):-
   	Dist is sqrt((Dx - Ox)*(Dx - Ox) + (Dy - Oy)*(Dy - Oy)).
   	
 /*Verificar que los municipios existen*/
-existe_municipios(Nombre_origen,Nombre_destino):- 
-	municipio(Origen,Nombre_origen),
-	municipio(Destino,Nombre_destino),
-  	write(Nombre_origen),
+existe_municipios(Origen,Destino):- 
+	mpio_coords(Origen,_,_),
+  	mpio_coords(Destino,_,_),
+  	write(Origen),
   	write('\n'),
-  	buscar_destino(Origen,Destino).	
+  	destino_es_origen(Origen,Destino).
 
 buscar_ruta():-
   write("Escriba el municipio de origen: "),
